@@ -1,0 +1,6 @@
+@REST_mobile_HostAddress = http://localhost:5230
+
+GET {{REST_mobile_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
