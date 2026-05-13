@@ -29,6 +29,9 @@ public class MobileShopDbContext(DbContextOptions<MobileShopDbContext> options) 
     public DbSet<CustomerRequest> CustomerRequests => Set<CustomerRequest>();
     public DbSet<BonusProgram> BonusPrograms => Set<BonusProgram>();
     public DbSet<DeviceRepair> DeviceRepairs => Set<DeviceRepair>();
+    public DbSet<LoginAuditLog> LoginAuditLogs => Set<LoginAuditLog>();
+    public DbSet<Session> Sessions => Set<Session>();
+    public DbSet<EmployeeAccount> EmployeeAccounts => Set<EmployeeAccount>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
